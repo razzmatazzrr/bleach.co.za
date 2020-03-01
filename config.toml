@@ -1,0 +1,41 @@
+baseurl                  = "/"           # Your domain name. Must end with "/"
+languageCode             = "en-us"
+defaultContentLanguage   = "en"
+isMultilingual           = false
+title                    = "Bleach Hair Studio"
+theme = "hugo-theme-sam"
+pygmentsStyle            = "monokai"                        # https://help.farbox.com/pygments.html
+pygmentsCodefences       = true
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+googleAnalytics        = "UA-155201607-1"                               # Tracking code, eg. "UA-111111111-1"
+
+[params]
+    dateform             = "Mon Jan 02, 2006"
+    dateformfull         = "Mon Jan 2 2006 15:04:05 EST"
+    favicon              = "sam.ico"
+    homepage             = "main"                           # What to call the home page link
+    footerText           = "Bleach Hair Studio, Harfield Village, Cape Town"
+
+# Metadata for Open Graph and Twitter
+    description          = "A new Hugo site."               # Max 160 characters show in search results
+    images               = ["tn.png"]                       # Image that shows on Twitter cards and Open Graph links to the site
+    title                = "Bleach Hair Studio"
+
+[[params.mainMenu]]
+    link = "/about"
+    text = "Bleach Hair Studio"
+
+[[params.mainMenu]]
+    link = "/services"
+    text = "Products and Services"
+
+[[params.mainMenu]]
+    link = "/gallerystudio"
+    text = "Studio Gallery"
+
+[[params.mainMenu]]
+    link = "/galleryhair"
+    text = "Hairstyle Gallery"
+
+[imaging]
+    quality = 75

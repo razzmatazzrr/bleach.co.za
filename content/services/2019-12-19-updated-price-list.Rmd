@@ -1,0 +1,64 @@
+---
+title: Updated Price List
+author: Hayley
+date: '2019-12-19'
+slug: price-lists
+categories: []
+tags: []
+showDate: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+```{r include=FALSE}
+source('~/dropbox/github/bleach/content/services/price-lists/workings_20191219.R')
+```
+
+Prices of products and services with effect from 19 December 2019.
+
+### Ladies 
+
+```{r echo = FALSE, results='asis',message=FALSE}
+library(knitr)
+library(kableExtra)
+kable(dfladies) %>% 
+  kable_styling(position = 'left',full_width = F) %>% 
+  column_spec(column = 1, width = "7cm") %>% 
+  column_spec(column = 2, width = "4cm")
+```
+
+### Gentlemen
+
+```{r echo = FALSE, results='asis',message=FALSE}
+library(knitr)
+library(kableExtra)
+kable(dfmen) %>% 
+  kable_styling(position = 'left',full_width = F) %>% 
+  column_spec(column = 1, width = "7cm") %>% 
+  column_spec(column = 2, width = "4cm")
+```
+
+### Treatments
+
+```{r echo = FALSE, results='asis',message=FALSE}
+library(knitr)
+library(kableExtra)
+kable(dftreat) %>% 
+  kable_styling(position = 'left',full_width = F) %>% 
+  column_spec(column = 1, width = "7cm") %>% 
+  column_spec(column = 2, width = "4cm")
+```
+
+### Colours
+
+```{r echo = FALSE, results='asis',message=FALSE}
+library(knitr)
+library(kableExtra)
+kable(dfcolour) %>% 
+  kable_styling(position = 'left',full_width = F)  %>% 
+  column_spec(column = 1, width = "7cm") %>% 
+  column_spec(column = 2, width = "4cm")
+```
